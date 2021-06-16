@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body>
+
+    <nav  class="navbar navbar-dark bg-primary topBar">
+      <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
+    </nav>
+   
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-5">
+          <h2>Search for a City:</h2>
+          <div class="container-fluid search-bottom">
+            <form>
+              <input type="text" class="form-control" id="citySearchBar" aria-describedby="City Searcher" placeholder="San Diego">
+              <button type="submit" class= "btn btn-primary submit" id="">Submit</button>
+            </form>
+          </div>
+          <div class = "container-fluid city-options-div">
+          <form>
+            <button type="submit" class= "btn btn-secondary submit city-options" id="Austin">Austin</button>
+            <button type="submit" class= "btn btn-secondary submit city-options" id="Chicago">Chicago</button>
+            <button type="submit" class= "btn btn-secondary submit city-options" id="NewYork">New York</button>
+            <button type="submit" class= "btn btn-secondary submit city-options" id="Orlando">Orlando</button>
+            <button type="submit" class= "btn btn-secondary submit city-options" id="SanFrancisco">San Francisco</button>
+            <button type="submit" class= "btn btn-secondary submit city-options" id="Seattle">Seattle</button>
+            <button type="submit" class= "btn btn-secondary submit city-options" id="Denver">Denver</button>
+            <button type="submit" class= "btn btn-secondary submit city-options" id="Atlanta">Atlanta</button>
+          </form>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-7">
+          <div class="container-fluid city">
+            <h3 class = "bold showcase-city"> placeholder city</h3>
+            <h5 class = "city-info">Temp: </h5>
+            <h5 class = "city-info">Wind: </h5>
+            <h5 class = "city-info">Humidity: </h5>
+            <h5 class = "city-info">UV Index: </h5>
+          </div>
+
+          <div class="container-fluid">
+            
+          </div>
+
+        </div>
+        
+        
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
