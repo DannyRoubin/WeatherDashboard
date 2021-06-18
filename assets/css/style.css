@@ -13,6 +13,11 @@ textarea {
   padding: 10px;
 }
 
+.spacer{
+  margin-left: -13%;
+  margin-right: -15%;
+}
+
 .topBar {
   justify-content: center;
 }
@@ -29,6 +34,7 @@ textarea {
 
 .submit {
   width: 245px;
+  width: -webkit-fill-available;
 }
 
 .city-options-div {
@@ -38,6 +44,7 @@ textarea {
 
 .city-options {
   margin-bottom: 15px;
+  width: -webkit-fill-available;
 }
 
 .showcase-city {
@@ -59,6 +66,12 @@ textarea {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+}
+
+.five-day{
+  border: solid 2px;
+  background: #5B776C;
+  color: white;
 }
 
 
