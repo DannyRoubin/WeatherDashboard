@@ -35,7 +35,7 @@
           <div class="container-fluid search-bottom">
             <form>
               <input type="text" class="form-control" id="citySearchBar" aria-describedby="City Searcher" placeholder="San Diego">
-              <button type="submit" class= "btn btn-primary submit" id="">Submit</button>
+              <button type="submit" class= "btn btn-primary submit" id="citySearchBarButton">Submit</button>
             </form>
           </div>
           <div class = "container-fluid city-options-div">
@@ -54,14 +54,15 @@
 
         <div class="col-12 col-md-7">
           <div class="container-fluid city">
-            <h3 class = "bold showcase-city" id = "currCity"> placeholder city</h3>
-            <h3 class = "bold showcase-city showcase-city-date" id = "currCityDate"> (3/30/2021)
-              <img class="showcase-city-img" id = "day1img" src="./assets/images/rain.png" alt="rainy day">
-            </h3>
-            <h5 class = "city-info">Temp: </h5>
-            <h5 class = "city-info">Wind: </h5>
-            <h5 class = "city-info">Humidity: </h5>
-            <h5 class = "city-info">UV Index: </h5>
+            <h3 class = "bold showcase-city" id = "currentCity"> placeholder city</h3>
+            <h3 class = "bold showcase-city showcase-city-date" id = "currentCityDate">  </h3>
+            <div>
+              <img class="showcase-city-img" id = "currentDayImg" src="./assets/images/rain.png" alt="rainy day">
+              </div>
+            <h5 class = "city-info"  id = "currentCityTemp">Temp: </h5>
+            <h5 class = "city-info"  id = "currentCitWind">Wind: </h5>
+            <h5 class = "city-info"  id = "currentCityHumidity">Humidity: </h5>
+            <h5 class = "city-info"  id = "currentCityUVI">UV Index: </h5>
           </div>
 
           <h3 class = "bold"> 5-Day Forecast:</h3>
@@ -126,6 +127,7 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
     crossorigin="anonymous"
   ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
