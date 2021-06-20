@@ -87,11 +87,15 @@ function showResponseAustin(event) {
 
       console.log(data.main.temp);
       console.log(data.name);
+      currentCity.innerHTML = (data.name);
+      currentCityTemp.innerHTML = "Temp: " + (data.main.temp) + "&deg; F";
+      currentCityWind.innerHTML = "Wind: " + (data.wind.speed) + "MPH";
+      currentCityHumidity.innerHTML = "Humidity: " + (data.main.humidity) + "%";
       console.log(data.coord.lon);
       console.log(data.coord.lat);
       var lon = data.coord.lon;
       var lat = data.coord.lat;
-      var requestUrlAustin2 = "https:api.openweathermap.org/data/2.5/onecall?lat=" +lat +"&lon=" +lon +"&appid=55838ae1992975e39fe364d4c0e5deb7";
+      var requestUrlAustin2 = "https:api.openweathermap.org/data/2.5/onecall?lat=" +lat +"&lon=" +lon +"&units=imperial&appid=55838ae1992975e39fe364d4c0e5deb7";
       //-------------------------------------------------------------------------------------------------------------------------------------------------------
       fetch(requestUrlAustin2)
         .then(function (response) {
@@ -100,6 +104,8 @@ function showResponseAustin(event) {
         .then(function (data) {
           console.log("Fetch Response \n-------------");
           console.log(data);
+          currentCityUVI.innerHTML = "UVI: " + (data.current.uvi);
+         // day1temp.innerHTML = "Temp: " + (data.daily.0.temp);
         });
     });
 }
