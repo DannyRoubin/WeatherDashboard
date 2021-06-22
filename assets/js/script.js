@@ -64,11 +64,11 @@ var day5humidity = document.querySelector("#day5humidity");
 //small function to display the current day
 function displayDay() {
   $("#currentCityDate").text(moment().format("[(]M/D/YYYY[)]"));
-  $("#day1date").text(moment().subtract(1,"days").format("M/D/YYYY"));
-  $("#day2date").text(moment().subtract(2,"days").format("M/D/YYYY"));
-  $("#day3date").text(moment().subtract(3,"days").format("M/D/YYYY"));
-  $("#day4date").text(moment().subtract(4,"days").format("M/D/YYYY"));
-  $("#day5date").text(moment().subtract(5,"days").format("M/D/YYYY"));
+  $("#day1date").text(moment().add(1,"days").format("M/D/YYYY"));
+  $("#day2date").text(moment().add(2,"days").format("M/D/YYYY"));
+  $("#day3date").text(moment().add(3,"days").format("M/D/YYYY"));
+  $("#day4date").text(moment().add(4,"days").format("M/D/YYYY"));
+  $("#day5date").text(moment().add(5,"days").format("M/D/YYYY"));
 }
 setInterval(displayDay, 1000);
 
