@@ -1,4 +1,4 @@
-# Homework6-WeatherDashboard
+# WeatherDashboard
 
 ## App Description 
 The purpose of this app is to serve as a weather application which allows the user to either click on one of the preset cities to view the current weather data and the
