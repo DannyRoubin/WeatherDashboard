@@ -21,4 +21,4 @@ To use this app, simply open the link at the bottom of this ReadMe and you'll be
 ![A screenshot of the app.](./assets/images/AppScreenshot1.jpg)
 
 ## Link to the App
-https://dannyroubin.github.io/Homework6-WeatherDashboard/
+https://dannyroubin.github.io/WeatherDashboard/
